@@ -2,13 +2,13 @@ import React from 'react';
 import Card from './components/Card';
 
 export default function Home() {
-  return (
-    <>
-       <section className='p-4 m-4 border-2 border-black shadow-md rounded-xl dark:border-white'>
-          <p className='text-3xl text-center text-black dark:text-white'>Bienvenido al e-commerce de mentira</p>
-          <p className='text-lg text-center text-black dark:text-white'>Esto funciona con MongoDB, por favor debe registrarse para hacer válido un ID de usuario y de carro para poder crear un carro de compra y que funcione la app.</p>
-        </section>
-         <Card />
-    </>
-  );
+    return (
+        <>
+            <section className='p-6 m-6 bg-gradient-to-r from-purple-600 to-indigo-800 border-4 border-neon-green shadow-neon rounded-2xl'>
+                <h1 className='text-white text-4xl font-bold text-center text-neon-green mb-4 animate-pulse'>Bienvenido al E-Commerce Gamer</h1>
+                <p className='text-xl text-center text-cyan-300'>¡Prepárate para una experiencia de compra épica! Regístrate ahora para obtener tu ID de usuario y desbloquear tu carrito de compras. ¡Que comience la aventura!</p>
+            </section>
+            <Card className='transform hover:scale-105 transition-transform duration-300' />
+        </>
+    );
 }
